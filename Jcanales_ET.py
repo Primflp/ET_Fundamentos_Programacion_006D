@@ -25,7 +25,7 @@ stock = {
  "342FHD": [444990,7],
  "GF75HD": [749990,2], 
  "UWU131HD": [349990,1], 
- "FS1230HD": [249990,0],    # No existe en el diccionario productos
+ "FS1230HD": [249990,0], 
 
  }
 
@@ -53,7 +53,6 @@ def stock_marca(marca):
             for modelosS, datosS in stock.items():
                 if modelosP == modelosS:
                     print(f"Modelo: {modelosS}, precio: {datosS[0]}, quedan {datosS[1]} unidades.")
-                    return False
     return True
 
 def busqueda_precio(p_min, p_max):
